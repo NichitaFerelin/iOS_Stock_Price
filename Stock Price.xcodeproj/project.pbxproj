@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6131C0722A388EC20013AFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6131C0712A388EC20013AFE6 /* SceneDelegate.swift */; };
+		613A7F1A2A399AFA000C94D9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A7F192A399AFA000C94D9 /* UIColor.swift */; };
+		6140547E2A2F285B00A97185 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140547D2A2F285B00A97185 /* Stock.swift */; };
+		614054812A2F5BC300A97185 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 614054802A2F5BC300A97185 /* Alamofire */; };
+		614054842A2F5DC500A97185 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 614054832A2F5DC500A97185 /* AlamofireImage */; };
 		61B966CB2A2DB2C5000D7FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966CA2A2DB2C5000D7FDD /* AppDelegate.swift */; };
-		61B966CD2A2DB2C5000D7FDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966CC2A2DB2C5000D7FDD /* SceneDelegate.swift */; };
-		61B966CF2A2DB2C5000D7FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966CE2A2DB2C5000D7FDD /* ViewController.swift */; };
-		61B966D22A2DB2C5000D7FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B966D02A2DB2C5000D7FDD /* Main.storyboard */; };
 		61B966D42A2DB2C6000D7FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B966D32A2DB2C6000D7FDD /* Assets.xcassets */; };
-		61B966D72A2DB2C6000D7FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B966D52A2DB2C6000D7FDD /* LaunchScreen.storyboard */; };
+		61B966E32A2DB60F000D7FDD /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966E22A2DB60F000D7FDD /* StocksViewController.swift */; };
+		61B966E72A2DC00E000D7FDD /* StockViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966E62A2DC00E000D7FDD /* StockViewCell.swift */; };
+		61B966EA2A2DDA2A000D7FDD /* Stocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B966E92A2DDA2A000D7FDD /* Stocks.json */; };
+		61B966EF2A2DDB29000D7FDD /* StockDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61B966ED2A2DDB28000D7FDD /* StockDataModel.xcdatamodeld */; };
+		61B966F22A2DDD3A000D7FDD /* StockDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966F02A2DDD3A000D7FDD /* StockDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6131C0712A388EC20013AFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = Features/SceneDelegate.swift; sourceTree = "<group>"; };
+		613A7F192A399AFA000C94D9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6140547D2A2F285B00A97185 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		61B966C72A2DB2C5000D7FDD /* Stock Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B966CA2A2DB2C5000D7FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61B966CC2A2DB2C5000D7FDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61B966CE2A2DB2C5000D7FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		61B966D12A2DB2C5000D7FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61B966D32A2DB2C6000D7FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		61B966D62A2DB2C6000D7FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61B966D82A2DB2C6000D7FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B966E22A2DB60F000D7FDD /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
+		61B966E62A2DC00E000D7FDD /* StockViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewCell.swift; sourceTree = "<group>"; };
+		61B966E92A2DDA2A000D7FDD /* Stocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stocks.json; sourceTree = "<group>"; };
+		61B966EE2A2DDB29000D7FDD /* StockDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockDataModel.xcdatamodel; sourceTree = "<group>"; };
+		61B966F02A2DDD3A000D7FDD /* StockDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614054812A2F5BC300A97185 /* Alamofire in Frameworks */,
+				614054842A2F5DC500A97185 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		613A7F182A399AD5000C94D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				613A7F192A399AFA000C94D9 /* UIColor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6140547C2A2F284C00A97185 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6140547D2A2F285B00A97185 /* Stock.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		61B966BE2A2DB2C5000D7FDD = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +84,51 @@
 		61B966C92A2DB2C5000D7FDD /* Stock Price */ = {
 			isa = PBXGroup;
 			children = (
+				6140547C2A2F284C00A97185 /* Domain */,
+				61B966F42A2DDD57000D7FDD /* CoreData */,
+				61B966E82A2DDA01000D7FDD /* Resources */,
+				613A7F182A399AD5000C94D9 /* Utils */,
+				61B966DF2A2DB2F9000D7FDD /* Features */,
 				61B966CA2A2DB2C5000D7FDD /* AppDelegate.swift */,
-				61B966CC2A2DB2C5000D7FDD /* SceneDelegate.swift */,
-				61B966CE2A2DB2C5000D7FDD /* ViewController.swift */,
-				61B966D02A2DB2C5000D7FDD /* Main.storyboard */,
+				6131C0712A388EC20013AFE6 /* SceneDelegate.swift */,
 				61B966D32A2DB2C6000D7FDD /* Assets.xcassets */,
-				61B966D52A2DB2C6000D7FDD /* LaunchScreen.storyboard */,
 				61B966D82A2DB2C6000D7FDD /* Info.plist */,
 			);
 			path = "Stock Price";
+			sourceTree = "<group>";
+		};
+		61B966DF2A2DB2F9000D7FDD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				61B966E02A2DB31B000D7FDD /* StocksList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		61B966E02A2DB31B000D7FDD /* StocksList */ = {
+			isa = PBXGroup;
+			children = (
+				61B966E22A2DB60F000D7FDD /* StocksViewController.swift */,
+				61B966E62A2DC00E000D7FDD /* StockViewCell.swift */,
+			);
+			path = StocksList;
+			sourceTree = "<group>";
+		};
+		61B966E82A2DDA01000D7FDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61B966E92A2DDA2A000D7FDD /* Stocks.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61B966F42A2DDD57000D7FDD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				61B966ED2A2DDB28000D7FDD /* StockDataModel.xcdatamodeld */,
+				61B966F02A2DDD3A000D7FDD /* StockDataModel.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +147,10 @@
 			dependencies = (
 			);
 			name = "Stock Price";
+			packageProductDependencies = (
+				614054802A2F5BC300A97185 /* Alamofire */,
+				614054832A2F5DC500A97185 /* AlamofireImage */,
+			);
 			productName = "Stock Price";
 			productReference = 61B966C72A2DB2C5000D7FDD /* Stock Price.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,10 @@
 				Base,
 			);
 			mainGroup = 61B966BE2A2DB2C5000D7FDD;
+			packageReferences = (
+				6140547F2A2F5BC300A97185 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				614054822A2F5DC500A97185 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 61B966C82A2DB2C5000D7FDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B966D72A2DB2C6000D7FDD /* LaunchScreen.storyboard in Resources */,
 				61B966D42A2DB2C6000D7FDD /* Assets.xcassets in Resources */,
-				61B966D22A2DB2C5000D7FDD /* Main.storyboard in Resources */,
+				61B966EA2A2DDA2A000D7FDD /* Stocks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B966CF2A2DB2C5000D7FDD /* ViewController.swift in Sources */,
 				61B966CB2A2DB2C5000D7FDD /* AppDelegate.swift in Sources */,
-				61B966CD2A2DB2C5000D7FDD /* SceneDelegate.swift in Sources */,
+				6131C0722A388EC20013AFE6 /* SceneDelegate.swift in Sources */,
+				61B966E72A2DC00E000D7FDD /* StockViewCell.swift in Sources */,
+				61B966E32A2DB60F000D7FDD /* StocksViewController.swift in Sources */,
+				6140547E2A2F285B00A97185 /* Stock.swift in Sources */,
+				613A7F1A2A399AFA000C94D9 /* UIColor.swift in Sources */,
+				61B966F22A2DDD3A000D7FDD /* StockDataModel.swift in Sources */,
+				61B966EF2A2DDB29000D7FDD /* StockDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		61B966D02A2DB2C5000D7FDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61B966D12A2DB2C5000D7FDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		61B966D52A2DB2C6000D7FDD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61B966D62A2DB2C6000D7FDD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		61B966D92A2DB2C6000D7FDD /* Debug */ = {
@@ -291,8 +348,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock Price/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +357,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferelin.Stock-Price";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,8 +377,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock Price/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +386,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferelin.Stock-Price";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +417,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6140547F2A2F5BC300A97185 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		614054822A2F5DC500A97185 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		614054802A2F5BC300A97185 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6140547F2A2F5BC300A97185 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		614054832A2F5DC500A97185 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 614054822A2F5DC500A97185 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		61B966ED2A2DDB28000D7FDD /* StockDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61B966EE2A2DDB29000D7FDD /* StockDataModel.xcdatamodel */,
+			);
+			currentVersion = 61B966EE2A2DDB29000D7FDD /* StockDataModel.xcdatamodel */;
+			path = StockDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 61B966BF2A2DB2C5000D7FDD /* Project object */;
 }
