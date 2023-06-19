@@ -4,17 +4,10 @@ import Alamofire
 
 class StockDetailsViewController: UIViewController {
     
-    private let companySymbol: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 18.0)
-        return label
-    }()
-    
-    private let companyFullName: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Normal", size: 12.0)
-        return label
-    }()
+    private let companySymbol: UILabel = UILabel(font: UIFont(weight: .bold, size: 18.0))
+    private let companyFullName: UILabel = UILabel(font: UIFont(weight: .normal, size: 12.0))
+    private let stockPrice: UILabel = UILabel(font: UIFont(weight: .bold, size: 24.0))
+    private let stockPriceChange: UILabel = UILabel(font: UIFont(weight: .bold, size: 16.0))
     
     private let backButton: UIButton = {
         let button = UIButton(type: .system)
@@ -28,18 +21,6 @@ class StockDetailsViewController: UIViewController {
         image.layer.cornerRadius = 4
         image.contentMode = .scaleAspectFit
         return image
-    }()
-    
-    private let stockPrice: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
-        return label
-    }()
-    
-    private let stockPriceChange: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
-        return label
     }()
     
     var selectedStock: StockDataModel?
@@ -95,7 +76,7 @@ class StockDetailsViewController: UIViewController {
         formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 0
         formatter.minimumFractionDigits = 0
-        let capitalizationRowView = addCompanyRowInfo(bottomOf: industryRowView, title: "Capitalization", content: "$\(formatter.string(for: selectedStock!.capitalization)!)")
+        addCompanyRowInfo(bottomOf: industryRowView, title: "Capitalization", content: "$\(formatter.string(for: selectedStock!.capitalization)!)")
         
         AF.request(selectedStock!.logoUrl).responseImage { response in
             if let image = response.data {
@@ -103,8 +84,16 @@ class StockDetailsViewController: UIViewController {
             }
         }
         
+        loadStockQuote()
+    }
+    
+    @objc func onCloseTapped(sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
+    private func loadStockQuote() {
         let apiKey = Bundle.main.infoDictionary!["API_KEY"] as! String
-        AF.request("https://finnhub.io/api/v1/quote?symbol=\(selectedStock!.symbol)&token=\(apiKey)").responseDecodable(of: StockDetailsModel.self) { response in
+        AF.request("https://finnhub.io/api/v1/quote?symbol=\(selectedStock!.symbol)&token=\(apiKey)").responseDecodable(of: StockDetails.self) { response in
             
             if response.error == nil, let result = response.value {
                 self.stockPrice.text = "$\(String(format: "%.2f", result.currentPrice))"
@@ -124,18 +113,14 @@ class StockDetailsViewController: UIViewController {
         }
     }
     
-    @objc func onCloseTapped(sender: UIButton) {
-        self.dismiss(animated: true)
-    }
-    
     private func addCompanyRowInfo(bottomOf topView: UIView, title: String, content: String) -> UIView {
         let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 20.0)
+        titleLabel.font = UIFont(weight: .medium, size: 20.0)
         titleLabel.textColor = .lightGray
         titleLabel.text = title
         
         let contentLabel = UILabel()
-        contentLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 22.0)
+        contentLabel.font = UIFont(weight: .bold, size: 22.0)
         contentLabel.text = content
         
         self.view.addSubview(titleLabel)

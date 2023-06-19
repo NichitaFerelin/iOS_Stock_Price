@@ -15,17 +15,8 @@ class StockViewCell: UICollectionViewCell {
         return image
     }()
     
-    private var companySymbol: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 18.0)
-        return label
-    }()
-    
-    private var companyFullName: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "HelveticaNeue-Normal", size: 12.0)
-        return label
-    }()
+    private var companySymbol: UILabel = UILabel(font: UIFont(weight: .bold, size: 18.0))
+    private var companyFullName: UILabel = UILabel(font: UIFont(weight: .normal, size: 12.0))
     
     override init(frame: CGRect) {
         super.init(frame: frame)

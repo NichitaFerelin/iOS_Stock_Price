@@ -27,8 +27,8 @@ class StocksViewController: UIViewController, UICollectionViewDelegateFlowLayout
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationItem.title = "Stocks"
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [.font: UIFont(name: "HelveticaNeue-Bold", size: 30)!]
-        self.navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(name: "HelveticaNeue-Medium", size: 20)!]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [.font: UIFont(weight: .bold, size: 30.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(weight: .medium, size: 20.0)]
         
         view.backgroundColor = .white
         view.addSubview(stocksCollectionView)
@@ -99,10 +99,9 @@ class StocksViewController: UIViewController, UICollectionViewDelegateFlowLayout
     private func setupInitialStocksCache() {
         let stocks: Array<Stock> = loadStocksFromJson() ?? []
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let stoskDataModel = stocks.map({ (stock: Stock) in
+        
+        stocks.map({ (stock: Stock) in
             stock.toManagedObject(in: appDelegate.persistentContainer.viewContext)
-        }).filter({ stock in
-            stock != nil
         })
         
         appDelegate.savePersistentContainerContext()

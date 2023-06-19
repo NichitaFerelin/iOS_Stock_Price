@@ -1,4 +1,4 @@
-struct StockDetailsModel: Decodable {
+struct StockDetails: Decodable {
     
     let currentPrice: Double
     let change: Double
