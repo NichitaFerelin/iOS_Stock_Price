@@ -44,11 +44,11 @@ class StockViewCell: UICollectionViewCell {
         
         companySymbol.translatesAutoresizingMaskIntoConstraints = false
         companySymbol.leadingAnchor.constraint(equalTo: stockImageView.trailingAnchor, constant: 15).isActive = true
-        companySymbol.bottomAnchor.constraint(equalTo: stockImageView.centerYAnchor, constant: 0).isActive = true
+        companySymbol.bottomAnchor.constraint(equalTo: stockImageView.centerYAnchor).isActive = true
         
         companyFullName.translatesAutoresizingMaskIntoConstraints = false
         companyFullName.leadingAnchor.constraint(equalTo: stockImageView.trailingAnchor, constant: 15).isActive = true
-        companyFullName.topAnchor.constraint(equalTo: stockImageView.centerYAnchor, constant: 0).isActive = true
+        companyFullName.topAnchor.constraint(equalTo: stockImageView.centerYAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6131C0722A388EC20013AFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6131C0712A388EC20013AFE6 /* SceneDelegate.swift */; };
 		613A7F1A2A399AFA000C94D9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A7F192A399AFA000C94D9 /* UIColor.swift */; };
+		613A7F1D2A39BE90000C94D9 /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A7F1C2A39BE90000C94D9 /* StockDetailsViewController.swift */; };
 		6140547E2A2F285B00A97185 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140547D2A2F285B00A97185 /* Stock.swift */; };
 		614054812A2F5BC300A97185 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 614054802A2F5BC300A97185 /* Alamofire */; };
 		614054842A2F5DC500A97185 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 614054832A2F5DC500A97185 /* AlamofireImage */; };
@@ -19,11 +20,14 @@
 		61B966EA2A2DDA2A000D7FDD /* Stocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B966E92A2DDA2A000D7FDD /* Stocks.json */; };
 		61B966EF2A2DDB29000D7FDD /* StockDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61B966ED2A2DDB28000D7FDD /* StockDataModel.xcdatamodeld */; };
 		61B966F22A2DDD3A000D7FDD /* StockDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B966F02A2DDD3A000D7FDD /* StockDataModel.swift */; };
+		61D961412A402CDC000A0A11 /* StockDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D961402A402CDC000A0A11 /* StockDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61081C0C2A3AD545005D01CE /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		6131C0712A388EC20013AFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = Features/SceneDelegate.swift; sourceTree = "<group>"; };
 		613A7F192A399AFA000C94D9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		613A7F1C2A39BE90000C94D9 /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
 		6140547D2A2F285B00A97185 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		61B966C72A2DB2C5000D7FDD /* Stock Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B966CA2A2DB2C5000D7FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,7 @@
 		61B966E92A2DDA2A000D7FDD /* Stocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stocks.json; sourceTree = "<group>"; };
 		61B966EE2A2DDB29000D7FDD /* StockDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockDataModel.xcdatamodel; sourceTree = "<group>"; };
 		61B966F02A2DDD3A000D7FDD /* StockDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataModel.swift; sourceTree = "<group>"; };
+		61D961402A402CDC000A0A11 /* StockDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,15 @@
 				613A7F192A399AFA000C94D9 /* UIColor.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		613A7F1B2A39BE27000C94D9 /* StockDetails */ = {
+			isa = PBXGroup;
+			children = (
+				613A7F1C2A39BE90000C94D9 /* StockDetailsViewController.swift */,
+				61D961402A402CDC000A0A11 /* StockDetailsModel.swift */,
+			);
+			path = StockDetails;
 			sourceTree = "<group>";
 		};
 		6140547C2A2F284C00A97185 /* Domain */ = {
@@ -93,6 +107,7 @@
 				6131C0712A388EC20013AFE6 /* SceneDelegate.swift */,
 				61B966D32A2DB2C6000D7FDD /* Assets.xcassets */,
 				61B966D82A2DB2C6000D7FDD /* Info.plist */,
+				61081C0C2A3AD545005D01CE /* Config.xcconfig */,
 			);
 			path = "Stock Price";
 			sourceTree = "<group>";
@@ -100,6 +115,7 @@
 		61B966DF2A2DB2F9000D7FDD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				613A7F1B2A39BE27000C94D9 /* StockDetails */,
 				61B966E02A2DB31B000D7FDD /* StocksList */,
 			);
 			path = Features;
@@ -215,6 +231,8 @@
 				61B966E32A2DB60F000D7FDD /* StocksViewController.swift in Sources */,
 				6140547E2A2F285B00A97185 /* Stock.swift in Sources */,
 				613A7F1A2A399AFA000C94D9 /* UIColor.swift in Sources */,
+				613A7F1D2A39BE90000C94D9 /* StockDetailsViewController.swift in Sources */,
+				61D961412A402CDC000A0A11 /* StockDetailsModel.swift in Sources */,
 				61B966F22A2DDD3A000D7FDD /* StockDataModel.swift in Sources */,
 				61B966EF2A2DDB29000D7FDD /* StockDataModel.xcdatamodeld in Sources */,
 			);
@@ -225,6 +243,7 @@
 /* Begin XCBuildConfiguration section */
 		61B966D92A2DB2C6000D7FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61081C0C2A3AD545005D01CE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -285,6 +304,7 @@
 		};
 		61B966DA2A2DB2C6000D7FDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61081C0C2A3AD545005D01CE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -339,6 +359,7 @@
 		};
 		61B966DC2A2DB2C6000D7FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61081C0C2A3AD545005D01CE /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +389,7 @@
 		};
 		61B966DD2A2DB2C6000D7FDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61081C0C2A3AD545005D01CE /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -24,6 +24,12 @@ class StocksViewController: UIViewController, UICollectionViewDelegateFlowLayout
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationItem.title = "Stocks"
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [.font: UIFont(name: "HelveticaNeue-Bold", size: 30)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(name: "HelveticaNeue-Medium", size: 20)!]
+        
         view.backgroundColor = .white
         view.addSubview(stocksCollectionView)
         
@@ -51,6 +57,12 @@ class StocksViewController: UIViewController, UICollectionViewDelegateFlowLayout
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StockViewCell.identifier, for: indexPath) as! StockViewCell
         cell.bind(stocks[indexPath.row], at: indexPath)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let stockDetailsContoller = StockDetailsViewController()
+        stockDetailsContoller.selectedStock = stocks[indexPath.row]
+        self.present(stockDetailsContoller, animated: true)
     }
     
     private func fetchStocksData() {
